@@ -144,6 +144,10 @@
     #progress-bar {
         width: 15rem;
     }
+
+    #score {
+        margin-bottom: 2rem;
+    }
     
     .choice-prefix, .choice-text {
         padding: 1rem 1.5rem;

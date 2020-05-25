@@ -13,6 +13,10 @@
     transform: scale(1.025);
 }
 
+.no-score {
+    font-size: 2rem;
+}
+
 @media screen and (max-width: 500px) and (orientation: portrait) {
     #final-score {
         font-size: 3rem;
@@ -46,6 +50,10 @@
 
     .high-score {
         font-size: 2rem;
+    }
+
+    .no-score {
+        font-size: 1.6rem;
     }
 }
 
