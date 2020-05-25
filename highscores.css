@@ -1,0 +1,56 @@
+#high-scores-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 4rem;
+}
+
+.high-score {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.high-score:hover {
+    transform: scale(1.025);
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    #final-score {
+        font-size: 3rem;
+    }
+
+    .high-score {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 950px) and (orientation: landscape) {
+    #final-score {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape) {
+    #final-score {
+        font-size: 3rem;
+    }
+
+    .high-score {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) and (orientation: portrait) {
+    #final-score {
+        font-size: 2.5rem;
+    }
+
+    .high-score {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) and (orientation: landscape) {
+    #high-scores-list {
+        margin-bottom: 2.5rem;
+    }
+}

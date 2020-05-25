@@ -1,0 +1,164 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgba(86, 165, 235, 0.25);
+    background: #fff;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background: #56a5eb;
+    color: #fff;
+}
+
+.choice-text {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.correct {
+    background: #28a745;
+}
+
+.incorrect {
+    background: #dc3545;
+    color: #ffffff;
+}
+
+.correct .choice-text, .incorrect .choice-text {
+    color: #ffffff;
+}
+
+/* HUD */
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progress-bar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #56a5eb;
+    margin-top: 1.5rem;
+}
+
+#progress-bar-full {
+    height: 3.5rem;
+    background-color: #56a5eb;
+    width: 0%;
+}
+
+/* LOADER */
+#loader {
+    border: 1.6rem solid #fff;
+    border-radius: 50%;
+    border-top: 1.6rem solid #56a5eb;
+    width: 12rem;
+    height: 12rem;
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    #progress-bar {
+        height: 3rem;
+    }
+
+    #progress-bar-full {
+        height: 2.5rem;
+    }
+
+    #score {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 950px) and (orientation: landscape) {
+    #hud {
+        justify-content: space-around;
+    }
+    
+    .choice-prefix, .choice-text {
+        padding: 1rem 1.5rem;
+    }
+
+    #progress-bar {
+        height: 2.5rem;
+    }
+
+    #progress-bar-full {
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape) {
+    #score {
+        margin-bottom: 0.5rem;
+    }
+
+    .choice-prefix, .choice-text {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 400px) and (orientation: portrait) {
+    #progress-bar {
+        width: 15rem;
+    }
+    
+    .choice-prefix, .choice-text {
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 650px) and (orientation: landscape) {
+    .hud-prefix {
+        font-size: 1.8rem;
+    }
+    #progress-bar {
+        width: 14rem;
+    }
+    
+    .choice-prefix, .choice-text {
+        padding: 0.5rem 1.5rem;
+    }
+}
